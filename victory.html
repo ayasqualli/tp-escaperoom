@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victory</title>
+    <style>
+      :root {
+        --bg-1: #0b1220;
+        --bg-2: #10263f;
+        --gold: #f8d96b;
+        --light: #eef7ff;
+        --green: #8df7a7;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, var(--bg-2), var(--bg-1) 65%);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--light);
+      }
+
+      .panel {
+        text-align: center;
+        padding: 48px 32px;
+      }
+
+      .trophy {
+        width: min(90vw, 460px);
+        display: block;
+        margin: 0 auto 28px;
+        filter: drop-shadow(0 12px 24px rgba(248, 217, 107, 0.45));
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        color: var(--gold);
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0 auto 30px;
+        max-width: 620px;
+        font-size: 1.28rem;
+        line-height: 1.7;
+        color: #dfefff;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.08rem;
+        color: var(--bg-1);
+        background: #ffef9c;
+        box-shadow: 0 10px 24px rgba(248, 217, 107, 0.35);
+        transition: transform 0.2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="panel">
+      <img class="trophy" src="assets/victory.png" alt="Victory trophy" />
+      <h1>You escaped!</h1>
+      <p>
+        Congratulations! You solved the puzzle,and the win is yours.
+      </p>
+      <a class="button" href="index.html">Play Again</a>
+    </main>
+  </body>
+</html>
