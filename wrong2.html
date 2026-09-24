@@ -49,6 +49,29 @@
         align-items: center;
         justify-content: center;
       }
+      .button {
+        display: block;
+        width: min(80%, 340px);
+        margin: 18px auto;
+        padding: 16px 20px;
+        background-color: #5b09e0;
+        color: #f2f1f1;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 30px;
+        transition:
+          transform 0.2s ease,
+          background-color 0.2s ease,
+          box-shadow 0.2s ease;
+        box-shadow: 0 6px 18px rgba(255, 255, 255, 0.08);
+      }
+
+      .button:hover {
+        background-color: #9569dc;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 22px rgba(255, 255, 255, 0.12);
+      }
     </style>
   </head>
   <body>
@@ -58,6 +81,7 @@
       </div>
       <h1><span>Wrong!</span></h1>
       <p>Wrong answer, try harder</p>
+      <a class="button" href="room2.html">Try again</a>
     </div>
   </body>
 </html>
